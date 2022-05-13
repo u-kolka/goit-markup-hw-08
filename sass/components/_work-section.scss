@@ -1,0 +1,25 @@
+.work {
+  display: flex;
+  @extend %list;
+
+  &__text {
+    color: $white-color;
+    @extend %uppercase-title;
+
+    @include centeredFlex;
+    min-height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: $title-background-color;
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+      @extend %MarginRight-reset;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%centeredMargin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%MarginRight-reset {
+  margin-right: 0;
+}
+
+%button {
+  color: $white-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: $button-font-size;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%filter-button {
+  color: $title-text-color;
+  background-color: $button-background-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $button-font-size;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%uppercase-title {
+  font-weight: 700;
+  font-size: $main-font-size;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+%icon {
+  display: inline-block;
+  fill: currentColor;
+}

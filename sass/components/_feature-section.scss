@@ -1,0 +1,32 @@
+.feature {
+  display: flex;
+  @extend %list;
+
+  &__thumb {
+    background-color: $alternate-background-color;
+    text-align: center;
+
+    @include centeredFlex;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $title-text-color;
+    @extend %uppercase-title;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+      @extend %MarginRight-reset;
+    }
+  }
+
+  &__icon {
+    @extend %icon;
+  }
+}

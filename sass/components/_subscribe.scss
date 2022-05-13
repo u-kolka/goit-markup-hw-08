@@ -1,0 +1,42 @@
+.subscribe {
+  &__tagline {
+    display: block;
+    margin-bottom: 20px;
+    color: $white-color;
+    @extend %uppercase-title;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 10px;
+    color: $footer-contact-color;
+    background-color: $title-background-color;
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: $button-font-size;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $footer-contact-color;
+    }
+  }
+  &__button {
+    @extend %button;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 28px;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-focus-btn;
+    }
+  }
+
+  &__icon {
+    @extend %icon;
+    margin-left: 10px;
+  }
+}

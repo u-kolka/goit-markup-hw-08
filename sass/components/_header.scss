@@ -1,0 +1,13 @@
+.header {
+  @include centeredFlex();
+  min-height: 80px;
+  border-bottom: 1px solid $header-border-color;
+
+  &__container {
+    @include centeredFlex();
+  }
+
+  &__nav {
+    display: flex;
+  }
+}

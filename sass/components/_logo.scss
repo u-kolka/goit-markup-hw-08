@@ -1,0 +1,13 @@
+.logo {
+  color: $black-color;
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+
+  &__part {
+    color: $accent-color;
+  }
+}
