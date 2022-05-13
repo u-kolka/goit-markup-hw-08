@@ -1,15 +1,16 @@
 .footer {
+  text-align: center;
   background: $second-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
 
   &__inner {
-    flex-grow: 1;
+    margin-bottom: 60px;
   }
 
   &__address {
@@ -39,11 +40,11 @@
 }
 
 .inner--socials {
-  margin-left: 70px;
+  // margin-left: 70px;
 }
 
 .inner--subscribe {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 
 .logo--white,

@@ -19,7 +19,7 @@
     position: relative;
 
     &:last-child {
-      @extend %MarginRight-reset;
+      margin-right: 0;
     }
   }
 }

@@ -1,10 +1,17 @@
 .filter {
-  @include centeredFlex;
+  // @include centeredFlex;
   @extend %list;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  &__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 
   &__button {

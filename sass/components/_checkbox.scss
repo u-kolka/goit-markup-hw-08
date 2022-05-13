@@ -1,7 +1,11 @@
 /* Оформление кастольного чекбокса */
 .checkbox {
   &__label {
-    @include centeredFlex;
+    // @include centeredFlex;
+    display: inline-flex;
+    align-items: flex-end;
+    line-height: 1.16;
+    font-size: 12px;
     margin-bottom: 30px;
   }
 
@@ -15,7 +19,7 @@
   }
 
   &__terms {
-    text-indent: 5px;
+    margin-left: 4px;
     color: $accent-color;
     text-decoration: underline;
     cursor: pointer;

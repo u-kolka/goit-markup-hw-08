@@ -1,10 +1,9 @@
 .feature {
-  display: flex;
+  // display: flex;
   @extend %list;
 
   &__thumb {
     background-color: $alternate-background-color;
-    text-align: center;
 
     @include centeredFlex;
     height: 120px;
@@ -13,16 +12,17 @@
 
   &__title {
     color: $title-text-color;
+    text-align: center;
     @extend %uppercase-title;
     margin-bottom: 10px;
   }
 
   &__item {
-    margin-right: 30px;
+    margin-bottom: 30px;
     position: relative;
 
     &:last-child {
-      @extend %MarginRight-reset;
+      margin-bottom: 0;
     }
   }
 

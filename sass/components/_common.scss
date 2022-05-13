@@ -19,31 +19,6 @@ h6 {
   padding: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &__title {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-}
-
-.section--no-top-padding {
-  padding-top: 0;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  @extend %centeredMargin;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -61,4 +36,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.rewiews {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

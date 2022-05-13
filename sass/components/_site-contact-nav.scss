@@ -1,5 +1,5 @@
 .site-nav {
-  @include centeredFlex();
+  // @include centeredFlex();
   margin-left: 93px;
   @extend %list;
 
@@ -9,7 +9,7 @@
 }
 
 .contact {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   @extend %list;
 
@@ -19,7 +19,7 @@
 
   &__link {
     color: $primery-text-color;
-    @include centeredFlex();
+    // @include centeredFlex();
   }
 
   &__icon {

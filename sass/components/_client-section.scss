@@ -1,11 +1,13 @@
 .client {
   @extend %list;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
 
   &__item {
-    width: 170px;
+    width: calc((100% - 4 * 15px) / 2);
     height: 92px;
+    margin: 15px;
   }
 
   &__link {
