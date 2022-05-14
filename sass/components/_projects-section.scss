@@ -35,6 +35,11 @@
     overflow: hidden;
   }
 
+  &__img {
+    object-fit: cover;
+    height: 294px;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;

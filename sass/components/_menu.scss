@@ -1,0 +1,49 @@
+.menu {
+  &__container {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+
+    z-index: 1;
+
+    background-color: $main-background-color;
+    padding: 48px 40px;
+
+    &.is-open {
+      display: block;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}

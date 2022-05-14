@@ -1,17 +1,52 @@
 .header {
-  // @include centeredFlex();
+  display: flex;
+  position: relative;
   min-height: 60px;
   border-bottom: 1px solid $header-border-color;
+  width: 100%;
 
   &__container {
-    // @include centeredFlex();
+    @media screen and (min-width: 768px) {
+      @include centeredFlex();
+    }
   }
 
   &__nav {
-    // display: flex;
+    @include centeredFlex();
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  &__list {
+    margin-top: 52px;
+    @extend %list;
+  }
+
+  &__item {
+    display: inline-block;
+    padding-right: 7px;
+
+    &:not(:first-child) {
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      padding-left: 10px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
   }
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    min-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 }
