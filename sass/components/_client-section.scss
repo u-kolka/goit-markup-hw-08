@@ -1,13 +1,26 @@
 .client {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
 
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
   &__item {
-    width: calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 60px) / 2);
     height: 92px;
     margin: 15px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      width: calc((100% / 3) - 90px);
+      flex-grow: 1;
+      margin: 15px;
+    }
   }
 
   &__link {

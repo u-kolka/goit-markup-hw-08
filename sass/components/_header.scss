@@ -1,21 +1,22 @@
 .header {
-  display: flex;
-  position: relative;
-  min-height: 60px;
-  border-bottom: 1px solid $header-border-color;
-  width: 100%;
+  // @media screen and (min-width: 480px) {
+  // min-width: 480px;
+  // }
 
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
   &__container {
-    @media screen and (min-width: 768px) {
-      @include centeredFlex();
-    }
+    min-height: 60px;
+    border-bottom: 1px solid $header-border-color;
   }
 
   &__nav {
-    @include centeredFlex();
-    justify-content: space-between;
     width: 100%;
     padding-top: 15px;
+
+    @include centeredFlex();
+    justify-content: space-between;
   }
 
   &__list {
@@ -40,13 +41,5 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-  }
-
-  @media screen and (min-width: 480px) {
-    min-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
   }
 }

@@ -1,16 +1,38 @@
 .footer {
-  text-align: center;
   background: $second-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__container {
-    // display: flex;
-    align-items: baseline;
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    text-align: center;
   }
 
-  &__inner {
-    margin-bottom: 60px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-bottom: 110px;
+  }
+
+  &__container {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+
+      .inner--socials {
+        margin-left: 70px;
+      }
+
+      .inner--subscribe {
+        margin-left: 93px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      &__inner {
+        margin-bottom: 60px;
+      }
+    }
   }
 
   &__address {
@@ -37,14 +59,6 @@
       border-color: inherit;
     }
   }
-}
-
-.inner--socials {
-  // margin-left: 70px;
-}
-
-.inner--subscribe {
-  // margin-left: 93px;
 }
 
 .logo--white,

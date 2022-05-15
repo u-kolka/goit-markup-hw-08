@@ -1,6 +1,15 @@
 .feature {
-  // display: flex;
   @extend %list;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 
   &__thumb {
     background-color: $alternate-background-color;
@@ -18,11 +27,20 @@
   }
 
   &__item {
-    margin-bottom: 30px;
-    position: relative;
-
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      width: calc((100% / 2) - 60px);
+      flex-grow: 1;
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 

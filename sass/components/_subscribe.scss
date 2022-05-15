@@ -1,4 +1,8 @@
 .subscribe {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+  }
+
   &__tagline {
     display: block;
     margin-bottom: 20px;
@@ -24,6 +28,17 @@
     }
   }
   &__button {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      position: absolute;
+      top: 100%;
+      left: 125px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      margin-left: 12px;
+    }
+
     @extend %button;
     display: inline-flex;
     align-items: center;

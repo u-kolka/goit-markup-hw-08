@@ -1,9 +1,12 @@
 .filter {
-  // @include centeredFlex;
   @extend %list;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;

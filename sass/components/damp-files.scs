@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  position: relative;
+  min-height: 60px;
+  //   border-bottom: 1px solid $header-border-color;
+  width: 100%;
+
+  &__container {
+    @media screen and (min-width: 768px) {
+      @include centeredFlex();
+    }
+  }
+
+  &__nav {
+    @include centeredFlex();
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  &__list {
+    margin-top: 52px;
+    @extend %list;
+  }
+
+  &__item {
+    display: inline-block;
+    padding-right: 7px;
+
+    &:not(:first-child) {
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      padding-left: 10px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+
+.menu {
+  &__container {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+
+    z-index: 1;
+
+    background-color: $main-background-color;
+    padding: 48px 40px;
+
+    &.is-open {
+      display: block;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}
+
+.container {
+  width: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @extend %centeredMargin;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
