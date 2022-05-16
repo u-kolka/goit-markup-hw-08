@@ -20,6 +20,12 @@ $white-color: #ffffff;
 $grey-color: #afb1b8;
 $black-color: #000000;
 
+$hero-bg-gradient: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+);
+
 /* Размеры шрифтов */
 $main-font-family: "Roboto", sans-serif;
 $logo-font-family: "Raleway", sans-serif;

@@ -28,7 +28,8 @@
 
 .modal {
   position: relative;
-  min-width: 450px;
+  @extend %centeredMargin;
+  max-width: 450px;
   max-height: 609px;
   padding: 40px;
   background-color: $white-color;
@@ -45,40 +46,40 @@
   @media screen and (min-width: $desktop) {
     max-width: 528px;
   }
+}
 
-  &__title {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 12px;
+.modal__title {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 5px;
+  display: flex;
+  background-color: $white-color;
+  border: 1px solid $button-close-border;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
+}
 
-  &__btn-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 5px;
-    display: flex;
-    background-color: $white-color;
-    border: 1px solid $button-close-border;
-    border-radius: 50%;
-    cursor: pointer;
+.modal__btn-send {
+  @extend %button;
+  @extend %centeredMargin;
+  display: block;
+  min-width: 200px;
+  padding: 10px 55px;
 
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
-  }
-
-  &__btn-send {
-    @extend %button;
-    @extend %centeredMargin;
-    display: block;
-    min-width: 200px;
-    padding: 10px 55px;
-
-    &:hover,
-    &:focus {
-      background-color: $hover-focus-btn;
-    }
+  &:hover,
+  &:focus {
+    background-color: $hover-focus-btn;
   }
 }

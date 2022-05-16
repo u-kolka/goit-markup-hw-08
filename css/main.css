@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-.modal__btn-send, .hero, .container {
+.modal__btn-send, .modal, .hero, .container {
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,6 +175,7 @@ img {
     left: 0;
     width: 100%;
     padding: 48px 40px;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -412,6 +413,7 @@ img {
     line-height: 1.14;
   }
 }
+
 .contact__icon {
   margin-right: 10px;
 }
@@ -443,24 +445,58 @@ img {
 .hero {
   background-color: #c4c4c4;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero.jpg");
+  padding-top: 118px;
+  padding-bottom: 118px;
+  min-width: 480px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-mobile.jpg");
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero-desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero-desktop@2x.jpg");
+  }
+}
+
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 360px;
   margin: 0 auto 30px;
 }
+
 .hero__button {
   padding: 10px 32px;
 }
@@ -568,6 +604,7 @@ img {
     margin: -15px;
   }
 }
+
 .team__item {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -593,11 +630,13 @@ img {
     margin-right: 30px;
   }
 }
+
 .team__desc {
   padding-top: 30px;
   padding-bottom: 24px;
   text-align: center;
 }
+
 .team__title {
   color: #212121;
   font-weight: 500;
@@ -606,6 +645,7 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
+
 .team__text {
   font-size: 16px;
   line-height: 1.19;
@@ -894,7 +934,7 @@ img {
 
 .modal {
   position: relative;
-  min-width: 450px;
+  max-width: 450px;
   max-height: 609px;
   padding: 40px;
   background-color: #ffffff;
@@ -919,11 +959,13 @@ img {
     max-width: 528px;
   }
 }
+
 .modal__title {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 12px;
 }
+
 .modal__btn-close {
   position: absolute;
   top: 8px;
@@ -940,6 +982,7 @@ img {
 .modal__btn-close:hover, .modal__btn-close:focus {
   fill: #2196f3;
 }
+
 .modal__btn-send {
   display: block;
   min-width: 200px;
@@ -957,6 +1000,7 @@ img {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form__label {
   display: block;
   margin-bottom: 4px;
@@ -964,7 +1008,9 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.form__input, .form__textarea {
+
+.form__input,
+.form__textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -975,12 +1021,14 @@ img {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus, .form__textarea:focus {
+.form__input:focus,
+.form__textarea:focus {
   outline: 1px solid #2196f3;
 }
+
 .form__icon {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 12px;
   fill: #212121;
 }
@@ -1009,6 +1057,15 @@ img {
 
 /* Оформление кастольного чекбокса */
 .checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
