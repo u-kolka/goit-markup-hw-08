@@ -8,33 +8,32 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: $hero-bg-gradient, url("../../images/Hero-mobile.jpg");
+  background-image: $hero-bg-gradient, url("./../images/Hero-mobile.jpg");
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: $hero-bg-gradient, url("../../images/Hero-mobile@2x.jpg");
+    background-image: $hero-bg-gradient, url("./../images/Hero-mobile@2x.jpg");
   }
 
   @media screen and (min-width: $tablet) {
-    background-image: $hero-bg-gradient, url("../../images/Hero-tablet.jpg");
+    background-image: $hero-bg-gradient, url("./../images/Hero-tablet.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: $hero-bg-gradient,
-        url("../../images/Hero-tablet@2x.jpg");
+      background-image: $hero-bg-gradient, url("./../images/Hero-tablet@2x.jpg");
     }
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: $hero-bg-gradient, url("../../images/Hero-desktop.jpg");
+    background-image: $hero-bg-gradient, url("./../images/Hero-desktop.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: $hero-bg-gradient,
-        url("../../images/Hero-desktop@2x.jpg");
+        url("./../images/Hero-desktop@2x.jpg");
     }
   }
 }
