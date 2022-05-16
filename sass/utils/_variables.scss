@@ -19,12 +19,14 @@ $backdrop-background-color: rgba(0, 0, 0, 0.2);
 $white-color: #ffffff;
 $grey-color: #afb1b8;
 $black-color: #000000;
+
 /* Размеры шрифтов */
 $main-font-family: "Roboto", sans-serif;
 $logo-font-family: "Raleway", sans-serif;
 $main-font-size: 14px;
 $button-font-size: 16px;
 
+// Брейкпоинты для медиа
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;

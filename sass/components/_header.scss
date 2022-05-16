@@ -1,27 +1,40 @@
 .header {
-  // @media screen and (min-width: 480px) {
-  // min-width: 480px;
-  // }
+  position: relative;
+  padding-top: 15px;
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
   }
+
   &__container {
     min-height: 60px;
     border-bottom: 1px solid $header-border-color;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      min-height: 80px;
+    }
   }
 
   &__nav {
     width: 100%;
-    padding-top: 15px;
-
     @include centeredFlex();
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+      justify-content: center;
+    }
   }
 
   &__list {
     margin-top: 52px;
     @extend %list;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
 
   &__item {

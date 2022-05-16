@@ -1,7 +1,6 @@
 .form {
   &__field {
     position: relative;
-    margin-bottom: 10px;
 
     &:focus-within .form__icon {
       fill: $accent-color;
@@ -19,6 +18,7 @@
 
   &__input,
   &__textarea {
+    display: block;
     width: 100%;
     margin-bottom: 10px;
     padding: 11px 40px;
@@ -41,6 +41,7 @@
 }
 
 .form__textarea {
+  min-height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;

@@ -20,6 +20,10 @@
     border: 1px solid $input-border-color;
     border-radius: 4px;
 
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+    }
+
     &::placeholder {
       font-size: $button-font-size;
       line-height: 1.25;

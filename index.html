@@ -21,8 +21,8 @@
             
                 <button 
                 type="button" 
-                class="menu__button is-open" 
-                aria-expanded="false" 
+                class="menu__button" 
+                aria-expanded="true" 
                 aria-controls="menu__container" 
                 data-menu-button>
                     <svg 
@@ -34,7 +34,7 @@
                         <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="menu__container is-open" id="menu__container" data-menu>
+                <div class="menu__container" id="menu__container" data-menu>
                     <ul class="site-nav">
                         <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
                         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -43,8 +43,8 @@
                     <!-- Контакты студии -->
                     <ul class="contact">
                         <li class="contact__item">
-                            <a href="tel:+380961111111" class="contact__link contact__link--font-size-34">
-                                <svg class="contact__icon" width="10" height="16">
+                            <a href="tel:+380961111111" class="contact__link">
+                                <svg class="contact__icon" width="10" height="14">
                                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                                 </svg>
                                 +38 096 111 11 11
@@ -52,7 +52,7 @@
                         </li>
                         <li class="contact__item">
                             <a href="mailto:info@devstudio.com" class="contact__link">
-                                <svg class="contact__icon" width="16" height="12">
+                                <svg class="contact__icon" width="14" height="10">
                                     <use href="./images/symbol-defs.svg#icon-envelope"></use>
                                 </svg>
                                 info@devstudio.com
@@ -431,7 +431,7 @@
             </div>
 
             <label class="form__label" for="comment">Комментарий</label>
-            <textarea class="form__textarea" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
+            <textarea class="form__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
 
             <label class="checkbox__label" for="policy">
                 <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy">
