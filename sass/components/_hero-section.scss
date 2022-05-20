@@ -1,10 +1,14 @@
 .hero {
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   @extend %centeredMargin;
   background-color: $hero-background-color;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  min-width: 480px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,12 +51,19 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 360px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__button {
   @extend %button;
   padding: 10px 32px;
+  margin-top: 30px;
 
   &:hover,
   &:focus {

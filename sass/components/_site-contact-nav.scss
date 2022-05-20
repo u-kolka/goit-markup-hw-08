@@ -11,7 +11,6 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 88px;
 
     &__item:not(:last-of-type) {
       margin-right: 50px;
@@ -20,10 +19,6 @@
     &__link {
       padding: 12px 0;
     }
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-left: 93px;
   }
 }
 
@@ -73,6 +68,15 @@
     &__link {
       display: flex;
       font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .contact__link--accent {
+      color: $accent-color;
+      font-size: 34px;
+      line-height: 1.18;
+      margin-bottom: 32px;
     }
   }
 

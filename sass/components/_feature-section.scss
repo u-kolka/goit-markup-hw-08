@@ -21,14 +21,18 @@
 
   &__title {
     color: $title-text-color;
-    text-align: center;
     @extend %uppercase-title;
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__item {
-    &:last-child {
-      margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {

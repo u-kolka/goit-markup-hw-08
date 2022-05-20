@@ -10,6 +10,14 @@
   overflow-y: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    padding: 208px 160px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 222px 536px;
+  }
 }
 
 .backdrop.is-hidden {

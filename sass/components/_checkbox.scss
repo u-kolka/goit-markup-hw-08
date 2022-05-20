@@ -1,12 +1,18 @@
 /* Оформление кастольного чекбокса */
 .checkbox {
   &__label {
-    @include centeredFlex;
-    display: inline-flex;
-    align-items: flex-end;
     line-height: 1.16;
     font-size: 12px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $mobile) {
+      @include centeredFlex;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__icon {
