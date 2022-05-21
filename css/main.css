@@ -171,6 +171,12 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .logo__part {
   color: #2196f3;
 }
